@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "lint": "npm exec eslint res/example/*.vue"
+  },
+  "dependencies": {
+    "eslint": "8.45.0",
+    "eslint-plugin-jsdoc": "43.0.7",
+    "eslint-plugin-vue": "9.24.1",
+    "eslint-plugin-eliottvincent": "file:./src/eslint"
+  }
+}
