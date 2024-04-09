@@ -84,6 +84,9 @@ module.exports = {
     function updateCurrentGroupComment(node) {
       const comments = context.getSourceCode().getCommentsBefore(node);
 
+      // NOTICE: the issue seems to be here, `getCommentsBefore` returns an \
+      //   empty array
+
       if (comments.length > 0) {
         for (let i = comments.length - 1; i >= 0; i--) {
           if (isIgnoreComment(comments[i])) {
