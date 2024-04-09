@@ -13,6 +13,10 @@ module.exports = {
     sourceType: "module"
   },
 
+  extends: [
+    "plugin:vue/vue3-recommended"
+  ],
+
   plugins: [
     "eslint-plugin-jsdoc",
     "eliottvincent"
